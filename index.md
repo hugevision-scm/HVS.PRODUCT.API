@@ -1,37 +1,77 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/hugevision-scm/HVS.PRODUCT.API/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# 使用准备
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 获取API的systemKey&uniqueCode
 
-### Markdown
+请API管理角色登录HVS，维护协同平台配置。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 用语
 
-```markdown
-Syntax highlighted code block
+|用语|说明|
+|:--|:--|
+|功能类型|API的功能类型分为3个<br>&nbsp; &nbsp; 1:创建业务数据<br>&nbsp; &nbsp; &nbsp; &nbsp; 创建业务单据并单据操作完成<br>&nbsp; &nbsp; 2:查询异步处理结果<br>&nbsp; &nbsp; &nbsp; &nbsp; 查询创建业务数据的处理结果，一般用于异步处理<br>&nbsp; &nbsp; 3:查询业务数据<br>&nbsp; &nbsp; &nbsp; &nbsp; 查询待处理业务数据并更新状态|
+|处理类型|API的处理类型分为2个<br>&nbsp; &nbsp; F:同步<br>&nbsp; &nbsp; &nbsp; &nbsp; API调用后，HVS处理完成后返回结果。所有API提供同步处理。<br>&nbsp; &nbsp; B:异步<br>&nbsp; &nbsp; &nbsp; &nbsp; API调用后马上返回"异步处理提交成功"的消息。30分钟内自动处理，处理完成后可以查询结果。仅创建业务数据API提供异步处理。|
 
-# Header 1
-## Header 2
-### Header 3
+# API共通
 
-- Bulleted
-- List
+## Request
 
-1. Numbered
-2. List
+先获取token，然后调用业务API
+  
+###  Request Header
 
-**Bold** and _Italic_ and `Code` text
+调用业务API时要设定token
 
-[Link](url) and ![Image](src)
+|KEY|Value|
+|:--|:--|
+|Authorization| Bearer *{Tokens}*|
+
+*{Tokens}*是Tokens API的返回值
+
+###  Request Body
+
+业务API的Request Body的共通字段
+
+|名称|类型|长度|必填项|附注|
+|:--|:--|:--|:--|:--|
+|requestId|string|36|✓|每次处理唯一的ID。重复也不报错。|
+|requestTime|timestamp|19|✓|请求时间|
+
+**大小写请正确输入！**
+
+## Response
+
+HVS服务器停止时，无返回Response
+
+### Response Body
+
+* 异常情况时返回如下JSON数据，此时HVS未接收请求
+
+|名称|类型|长度|必填项|附注|
+|:--|:--|:--|:--|:--|
+|servlet|string|255|✓|错误代码|
+|message|string|255|✓|错误消息|
+|url|string|255|✓|调用时指定的URL|
+|status|integer|3|✓|错误编码|
+
+
+Request Headers输入的Token失效时返回如下JSON数据
+
+```
+{
+    "servlet": "com.trekglobal.idempiere.rest.api.v1.ApplicationV1",
+    "message": "Unauthorized",
+    "url": "{调用时指定的URL}",
+    "status": "401"
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hugevision-scm/HVS.PRODUCT.API/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Request Body的JSON解析失败时返回如下JSON数据
+```
+{
+    "servlet": "com.trekglobal.idempiere.rest.api.v1.ApplicationV1",
+    "message": "Request failed.",
+    "url": "{调用时指定的URL}",
+    "status": "500"
+}
+```
