@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "97a76228-977c-4369-b1fe-cf6ff7e0e9fe",
+		"name": "HVS-RestFul-API.Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tokens",
+			"item": [
+				{
+					"name": "Tokens.sample",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"pm.environment.set(\"authToken\", jsonData.token);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"systemKey\": \"LogiSystem\",\n    \"uniqueCode\": \"215295df-f978-4a43-bb89-d756dbac0330\",\n    \"userName\": \"user01@LogiSystem\"\n}"
+						},
+						"url": {
+							"raw": "https://demo.scm.huge-vision.com/api/v1/auth/tokens",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"scm",
+								"huge-vision",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"tokens"
+							]
+						},
+						"description": "Create authentication token with user name and password. The return token is use as Authorization request header (Bearer {token}) for subsequent api/v1/auth call"
+					},
+					"response": [
+						{
+							"name": "api/v1/auth/tokens",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"systemKey\":\"HVSDemoSystem1\",\"uniqueCode\":\"HVSDemoSystem1Password\",\"userName\":\"物流担当_0101_01@HVSDemoSystem1\",\"parameters\":{\n  \"clientId\": 1000003,\n  \"roleId\": 1000021\t,\n  \"organizationId\": 1000001,\n  \"warehouseId\": 0\n}}\n"
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/auth/tokens",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"tokens"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "284"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.33.v20201020)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJraWQiOiJpZGVtcGllcmUiLCJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJXSFRFU1QiLCJBRF9Vc2VyX0lEIjowLCJpc3MiOiJpZGVtcGllcmUub3JnIiwiQURfQ2xpZW50X0lEIjoxMDAwMDAzLCJleHAiOjE2MzY1MTY4NDF9.KfwyVoYXWVDjwMIOSJ5FDQqvJ2dN23elNPsrPINcYPM_2iePZJHY8Ycf7FFi-99xTyViZY3HycUcNc7_bAcB2A\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "API170COF",
+			"item": [
+				{
+					"name": "API170COF.sample",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestId\": \"431e38b8-b67f-4eb8-ba15-173b3495f67e\",\n    \"requestTime\": \"2021-11-15 12:00:00\",\n    \"docList\": [\n        {\n            \"docNo\": \"INV2021110001\",\n            \"org_Text\": \"HugeVision-SCM Demo\",\n            \"doctype_Name\": \"库存调整\",\n            \"movementDate\": \"2021-11-15\",\n            \"dateAcct\": \"2021-11-15\",\n            \"warehouse_Text\": \"D01仓库A\",\n            \"description\": \"库存调整附注\",\n            \"lineList\": [\n                {\n                    \"lineId\": \"1\",\n                    \"locator_Text\": \"0001_D01仓库A正品库位\",\n                    \"product_Text\": \"SD01B02_D01食品酒饮02\",\n                    \"descriptionLine\": \"L01明细附注\",\n                    \"lot\": \"L202111\",\n                    \"dateProduction\": \"2021-11-01\",\n                    \"invStatus_Text\": \"正常\",\n                    \"adjustQuantity\": \"1000\"\n                },\n                {\n                    \"lineId\": \"2\",\n                    \"locator_Text\": \"0001_D01仓库A正品库位\",\n                    \"product_Text\": \"BD01A01_D01零部件001\",\n                    \"descriptionLine\": \"L02明细附注\",\n                    \"invStatus_Text\": \"正常\",\n                    \"adjustQuantity\": \"200\"\n                }\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/processes/importintenaluseinventory_co_f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"processes",
+								"importintenaluseinventory_co_f"
+							]
+						},
+						"description": "Run process"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API09APDF",
+			"item": [
+				{
+					"name": "API09APDF.sample.AddCondition",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{authToken}}"
+							},
+							{
+								"key": "run_time",
+								"type": "text",
+								"value": "{{var}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestId\": \"431e38b8-b67f-4eb8-ba15-173b3495f67c\",\n    \"requestTime\": \"2021-11-24 12:00:00\",\n    \"org_Value\" : \"D01\",\n    \"org_Name\" : \"HugeVision-SCM Demo\",\n    \"doctype_Name\" : \"发货单-信用\",\n    \"documentNo\" : \"2110DOC8003\",\n    \"poReference\" : \"DOC0001\",\n    \"documentNo_Order\" : \"2110SOC8002\",\n    \"poReference_Order\" : \"SOC0001\",\n    \"bpartner_Value\" : \"CD01NB50\",\n    \"bpartner_Name\" : \"D01信用客户50名称\",\n    \"warehouse_Value\" : \"00\",\n    \"warehouse_Name\" : \"D01仓库A\",\n    \"warehouse_ReferenceNo\" : \"WH1\",\n    \"movementDate\" : \"2021-11-24\",\n    \"movementDateTo\" : \"2021-11-24\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/processes/exportshipment_pd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"processes",
+								"exportshipment_pd"
+							]
+						},
+						"description": "Run process"
+					},
+					"response": []
+				},
+				{
+					"name": "API09APDF.sample.NoCondition",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{authToken}}"
+							},
+							{
+								"key": "run_time",
+								"type": "text",
+								"value": "{{var}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestId\": \"431e38b8-b67f-4eb8-ba15-173b3495f67c\",\n    \"requestTime\": \"2021-11-24 12:00:00\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/processes/exportshipment_pd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"processes",
+								"exportshipment_pd"
+							]
+						},
+						"description": "Run process"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API170COB",
+			"item": [
+				{
+					"name": "API170COB.sample",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestId\": \"431e38b8-b67f-4eb8-ba15-173b3495f67e\",\n    \"requestTime\": \"2021-11-15 12:00:00\",\n    \"docList\": [\n        {\n            \"docNo\": \"INV2021110001\",\n            \"org_Text\": \"HugeVision-SCM Demo\",\n            \"doctype_Name\": \"库存调整\",\n            \"movementDate\": \"2021-11-15\",\n            \"dateAcct\": \"2021-11-15\",\n            \"warehouse_Text\": \"D01仓库A\",\n            \"description\": \"库存调整附注\",\n            \"lineList\": [\n                {\n                    \"lineId\": \"1\",\n                    \"locator_Text\": \"0001_D01仓库A正品库位\",\n                    \"product_Text\": \"SD01B02_D01食品酒饮02\",\n                    \"descriptionLine\": \"L01明细附注\",\n                    \"lot\": \"L202111\",\n                    \"dateProduction\": \"2021-11-01\",\n                    \"invStatus_Text\": \"正常\",\n                    \"adjustQuantity\": \"1000\"\n                },\n                {\n                    \"lineId\": \"2\",\n                    \"locator_Text\": \"0001_D01仓库A正品库位\",\n                    \"product_Text\": \"BD01A01_D01零部件001\",\n                    \"descriptionLine\": \"L02明细附注\",\n                    \"invStatus_Text\": \"正常\",\n                    \"adjustQuantity\": \"200\"\n                }\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/processes/importintenaluseinventory_co_f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"processes",
+								"importintenaluseinventory_co_f"
+							]
+						},
+						"description": "Run process"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API170NNF",
+			"item": [
+				{
+					"name": "API170NNF.sample",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestId\": \"cc4a1ca7-436b-4cd5-9482-62134931fdc0\",\n    \"requestTime\": \"2021-11-24 15:30:00\",\n    \"targetRequestId\": \"431e38b8-b67f-4eb8-ba15-173b3495f67c\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/processes/inquiryintenaluseinventory_co",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"processes",
+								"inquiryintenaluseinventory_co"
+							]
+						},
+						"description": "Run process"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
