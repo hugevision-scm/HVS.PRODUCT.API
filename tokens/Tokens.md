@@ -63,9 +63,9 @@ JSON格式样例
 
 |名称|类型|长度|必填项|附注|
 |:--|:--|:--|:--|:--|
-|title|string|<span style="color:red;">100</span>|✓|错误标题|
-|status|integer|<span style="color:red;">3</span>|✓|错误编码|
-|detail|string|<span style="color:red;">255</span>|✓|错误消息|
+|title|string|<span>100</span>|✓|错误标题|
+|status|integer|<span>3</span>|✓|错误编码|
+|detail|string|<span>255</span>|✓|错误消息|
 
 JSON格式样例
 ```
