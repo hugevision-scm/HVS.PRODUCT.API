@@ -11,13 +11,11 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 
 ## **说明文档构成**
 
-[API调用说明](#API调用说明)<br>
-[API功能说明](#API功能说明)<br>
-[API接口列表](#API接口列表)<br>
+[API调用说明](#API调用说明目录位置)<br>
+[API功能说明](#API功能说明目录位置)<br>
+[API接口列表](#API接口列表目录位置)<br>
 
-
-<span id="API调用说明"></span>
-
+<span id="API调用说明目录位置"></span>
 ## **API调用说明**
 
 接口需使用HTTPS协议、JSON数据格式、UTF8编码
@@ -45,21 +43,19 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 <br>
 
 
-<span id="API功能说明"></span>
+<span id="API功能说明目录位置"></span>
 
 ## **API功能说明**
-
 
 **功能类型**<br>
 
 API的功能类型有——<br>
 1、查询业务数据<br>
-查询业务数据，可以同时更新接口字段的状态
+查询业务数据，可以同时更新接口字段的状态<br>
 2、创建业务数据<br>
 创建业务单据，同时执行单据操作-完成处理<br>
 3、查询异步处理结果<br>
 查询创建业务数据的处理结果，一般用于异步处理<br>
-
 
 **处理类型**
 
@@ -80,18 +76,18 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 (仅支持同步处理)<br>
 ![](images/API_DataQuery.png)<br>
 
-**创建业务数据(同步)**
+**创建业务数据(同步)**<br>
 ![](images/API_DocCreate-F.png)<br>
 
-**创建业务数据(异步)**
+**创建业务数据(异步)**<br>
 ![](images/API_DocCreate-B.png)<br>
 
-**查询异步处理结果**
+**查询异步处理结果**<br>
 (仅支持同步处理)<br>
 ![](images/API_ResultQuery.png)<br>
 
 
-<span id="API接口列表"></span>
+<span id="API接口列表目录位置"></span>
 
 ## **API接口列表**
 
