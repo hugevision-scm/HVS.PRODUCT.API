@@ -1,77 +1,102 @@
 
-# 使用准备
+# HugeVision-SCM API接口对接说明
 
-## 获取API的systemKey&uniqueCode
 
-请API管理角色登录HVS，维护协同平台配置。
+HugeVision-SCM API是赋能连接与协同的开放接口<br>
+服务使用方的其他系统(后称"外部系统")可以使用API接口与HugeVision-SCM平台进行数据交互和业务协同<br>
+<br>
 
-# 用语
+<span id="说明文档构成"></span>
 
-|用语|说明|
-|:--|:--|
-|功能类型|API的功能类型分为3个<br>&nbsp; &nbsp; 1:创建业务数据<br>&nbsp; &nbsp; &nbsp; &nbsp; 创建业务单据并单据操作完成<br>&nbsp; &nbsp; 2:查询异步处理结果<br>&nbsp; &nbsp; &nbsp; &nbsp; 查询创建业务数据的处理结果，一般用于异步处理<br>&nbsp; &nbsp; 3:查询业务数据<br>&nbsp; &nbsp; &nbsp; &nbsp; 查询待处理业务数据并更新状态|
-|处理类型|API的处理类型分为2个<br>&nbsp; &nbsp; F:同步<br>&nbsp; &nbsp; &nbsp; &nbsp; API调用后，HVS处理完成后返回结果。所有API提供同步处理。<br>&nbsp; &nbsp; B:异步<br>&nbsp; &nbsp; &nbsp; &nbsp; API调用后马上返回"异步处理提交成功"的消息。30分钟内自动处理，处理完成后可以查询结果。仅创建业务数据API提供异步处理。|
+---
+## **说明文档构成**
+---
+[API调用说明](#API调用说明)<br>
+[TOKEN获取](tokens/Tokens.md)<br>
+[API共通说明](#API共通说明)<br>
+[业务API具体说明](#业务API列表)<br>
 
-# API共通
+---
+<span id="API调用说明"></span>
 
-## Request
+## **API调用说明**
+---
+### 接口需使用HTTPS协议、JSON数据格式、UTF8编码
 
-先获取token，然后调用业务API
-  
-###  Request Header
 
-调用业务API时要设定token
+![](images/API_CallStep.png)<br>
 
-|KEY|Value|
-|:--|:--|
-|Authorization| Bearer *{Tokens}*|
+### Step1 协同平台注册
+在HugeVision-SCM中注册协同平台，获得系统名、系统密码<br>
+在HugeVision-SCM中注册协同平台用户，获得实体、组织、角色<br>
 
-*{Tokens}*是Tokens API的返回值
+### Step2 验证身份并获取Token
+使用Step1中注册的系统名、用户名、系统密码进行登录认证，取得事先配置的实体、组织、角色以获取令牌<br>
+※令牌为JWT-JSON Web Token(RFC7591)认证令牌<br>
+※具体请参考[TOKEN获取](tokens/Tokens.md)
 
-###  Request Body
+### Step3 缓存和刷新Token
+开发者需要缓存Token，用于后续接口的调用<br>
+※Token不可以返回外部系统前台，需要保存在后台，所有访问API的请求需由后台发起<br>
+※不能频繁调用TOKEN获取接口，否则会受到频率拦截<br>
 
-业务API的Request Body的共通字段
+### Step4 调用具体的业务API
+使用缓存的Token调用具体业务API，具体请参考[各功能具体说明]()<br>
+※Token的有效时长为60分钟，当Token失效或过期时，需要重新获取
+<br>
 
-|名称|类型|长度|必填项|附注|
+---
+<span id="API共通说明"></span>
+
+## **API共通说明**
+---
+### 术语说明
+
+#### **功能类型**
+API的功能类型有——<br>
+1、查询业务数据<br>
+查询业务数据，可以同时更新接口字段的状态
+2、创建业务数据<br>
+创建业务单据，同时执行单据操作-完成处理<br>
+3、查询异步处理结果<br>
+查询创建业务数据的处理结果，一般用于异步处理<br>
+
+
+#### **处理类型**
+F:同步处理<br>
+API调用后，同时完成API请求导入及所有后续处理，处理完成后返回处理结果<br>
+※所有功能类型均可支持同步处理<br>
+<br>
+B:异步处理<br>
+API调用后，只执行API请求导入，导入成功即返回"异步处理提交成功"的消息<br>
+每30分钟一次执行计划任务处理上述API请求，处理完成后保留异步处理结果待查<br>
+外部系统需另行调用各业务的**查询异步处理结果API**，查看异步处理结果<br>
+※仅创建业务数据功能类型的API支持异步处理<br>
+<br>
+
+#### **API接口方式图**
+查询业务数据功能(仅支持同步处理)
+![](images/API_DataQuery.png)<br>
+
+创建业务数据功能(同步处理)
+![](images/API_DocCreate-F.png)<br>
+
+创建业务数据功能(异步处理)
+![](images/API_DocCreate-B.png)<br>
+
+查询异步处理结果功能(仅支持同步处理)
+![](images/API_ResultQuery.png)<br>
+
+---
+<span id="业务API列表"></span>
+
+## **业务API具体说明**
+---
+### 业务API列表(点击说明文档可跳转到具体说明页面)
+
+|功能Code|功能类型|处理类型|概述|说明文档
 |:--|:--|:--|:--|:--|
-|requestId|string|36|✓|每次处理唯一的ID。重复也不报错。|
-|requestTime|timestamp|19|✓|请求时间|
-
-**大小写请正确输入！**
-
-## Response
-
-HVS服务器停止时，无返回Response
-
-### Response Body
-
-* 异常情况时返回如下JSON数据，此时HVS未接收请求
-
-|名称|类型|长度|必填项|附注|
-|:--|:--|:--|:--|:--|
-|servlet|string|255|✓|错误代码|
-|message|string|255|✓|错误消息|
-|url|string|255|✓|调用时指定的URL|
-|status|integer|3|✓|错误编码|
-
-
-Request Headers输入的Token失效时返回如下JSON数据
-
-```
-{
-    "servlet": "com.trekglobal.idempiere.rest.api.v1.ApplicationV1",
-    "message": "Unauthorized",
-    "url": "{调用时指定的URL}",
-    "status": "401"
-}
-```
-
-Request Body的JSON解析失败时返回如下JSON数据
-```
-{
-    "servlet": "com.trekglobal.idempiere.rest.api.v1.ApplicationV1",
-    "message": "Request failed.",
-    "url": "{调用时指定的URL}",
-    "status": "500"
-}
-```
+|API09APDF|查询业务数据|同步|查询待处理发货单信息|[API09APDF](processes/API09APDF.md)
+|API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API09APDF.md)
+|API170COB|创建业务数据|异步|创建库存调整单|[API170COB](processes/API170COB.md)
+|API170NNF|查询异步处理结果|同步|查询库存调整单的异步处理结果|[API170NNF](processes/API170NNF.md)
