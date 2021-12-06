@@ -27,7 +27,7 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 
 **Step1 协同平台注册**<br>
 在HugeVision-SCM中注册协同平台，获得系统名、系统密码<br>
-在HugeVision-SCM中注册协同平台用户，获得实体、组织、角色<br>
+在HugeVision-SCM中注册协同平台用户，获得平台用户名、实体、组织、角色<br>
 
 **Step2 验证身份并获取Token**<br>
 使用Step1中注册的系统名、用户名、系统密码进行登录认证，取得事先配置的实体、组织、角色以获取令牌<br>
