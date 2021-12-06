@@ -100,6 +100,6 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |:--|:--|:--|:--|:--|
 |-|认证并获取Token|同步|认证并获取Token|[TOKEN获取](tokens/Tokens.md)
 |API09APDF|查询业务数据|同步|查询待处理发货单信息|[API09APDF](processes/API09APDF.md)
-|API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API09APDF.md)
+|API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API170COF.md)
 |API170COB|创建业务数据|异步|创建库存调整单|[API170COB](processes/API170COB.md)
 |API170NNF|查询异步处理结果|同步|查询库存调整单的异步处理结果|[API170NNF](processes/API170NNF.md)
