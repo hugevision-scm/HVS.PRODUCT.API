@@ -40,7 +40,7 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 ※不能频繁调用TOKEN获取接口，否则会受到频率拦截<br>
 
 **Step4 调用具体的业务API**<br>
-使用缓存的Token调用具体业务API，具体请参考[各功能具体说明](#业务API列表)<br>
+使用缓存的Token调用具体业务API，具体请参考[API接口列表](#API接口列表])<br>
 ※Token的有效时长为60分钟，当Token失效或过期时，需要重新获取
 <br>
 
