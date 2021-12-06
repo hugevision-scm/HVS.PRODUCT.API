@@ -3,20 +3,20 @@
 ## 目录
 ---
 
-#### [登录画面](#登录画面)
-#### [HOME画面](#HOME画面)
-#### [常规窗口](#常规窗口)
-#### [信息窗口](#信息窗口)
-#### [流程处理](#流程处理)
-#### [报表/导出](#报表导出)
-#### [上传/导入](#上传导入)
-#### [个人中心](#个人中心)
+#### [登录画面](#1)
+#### [HOME画面](#2)
+#### [常规窗口](#3)
+#### [信息窗口](#4)
+#### [流程处理](#5)
+#### [报表/导出](#6)
+#### [上传/导入](#7)
+#### [个人中心](#8)
 
 <br>
 
 ---
 
-<span id="登录画面"></span>
+<span id="1"></span>
 
 [<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片2.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
@@ -25,15 +25,14 @@
 ![](幻灯片5.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片6.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-
-<span id="HOME画面"></span>
+<span id="2"></span>
 
 ![](幻灯片7.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片8.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片9.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
-![](幻灯片10.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片10.PNG)<br>	[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="常规窗口"></span>
+<span id="3"></span>
 
 ![](幻灯片11.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片12.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
@@ -44,20 +43,20 @@
 ![](幻灯片17.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片18.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="信息窗口"></span>
+<span id="4"></span>
 
 ![](幻灯片19.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片20.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片21.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片22.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="流程处理"></span>
+<span id="5"></span>
 
 ![](幻灯片23.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片24.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片25.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="报表导出"></span>
+<span id="6"></span>
 
 ![](幻灯片26.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片27.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
@@ -66,7 +65,7 @@
 ![](幻灯片30.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片31.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="上传导入"></span>
+<span id="7"></span>
 
 ![](幻灯片32.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片33.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
@@ -74,7 +73,7 @@
 ![](幻灯片35.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片36.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 
-<span id="个人中心"></span>
+<span id="8"></span>
 
 ![](幻灯片37.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
 ![](幻灯片38.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
