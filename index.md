@@ -14,7 +14,7 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 [API调用说明](#API调用说明目录位置)<br>
 [API功能说明](#API功能说明目录位置)<br>
 [API接口列表](#API接口列表目录位置)<br>
-[操作手册](manuals/manuals.md)<br>
+[操作手册](manuals/PNG/HugeVision-SCM操作手册-00.基本操作篇/index.md)<br>
 
 
 
