@@ -1,0 +1,93 @@
+# HugeVision-SCM操作手册-00.基本操作篇
+<span id="目录"></span>
+## 目录
+---
+
+#### [登录画面](#登录画面)
+#### [HOME画面](#HOME画面)
+#### [常规窗口](#常规窗口)
+#### [信息窗口](#信息窗口)
+#### [流程处理](#流程处理)
+#### [报表/导出](#报表/导出)
+#### [上传/导入](#上传/导入)
+#### [个人中心](#个人中心)
+<br>
+
+---
+
+<span id="登录画面"></span>
+
+[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片2.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片3.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片4.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片5.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片6.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="HOME画面"></span>
+
+![](幻灯片7.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片8.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片9.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片10.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="常规窗口"></span>
+
+![](幻灯片11.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片12.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片13.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片14.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片15.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片16.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片17.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片18.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="信息窗口"></span>
+
+![](幻灯片19.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片20.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片21.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片22.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="流程处理"></span>
+
+![](幻灯片23.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片24.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片25.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="报表/导出"></span>
+
+![](幻灯片26.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片27.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片28.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片29.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片30.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片31.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="上传/导入"></span>
+
+![](幻灯片32.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片33.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片34.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片35.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片36.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+
+<span id="个人中心"></span>
+
+![](幻灯片37.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片38.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片39.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片40.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片41.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片42.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片43.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片44.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片45.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片46.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片47.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片48.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片49.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片50.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片51.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片52.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片53.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
