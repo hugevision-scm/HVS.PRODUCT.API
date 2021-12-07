@@ -17,7 +17,7 @@ API开发向导|API调用说明、功能说明及所有API功能列表|[API开�
 
 |名称|概述|文档链接|
 |:--|:---|:--|
-00.基本操作篇|HugeVision-SCM的各功能的共通操作方法|[00.基本操作篇](manuals/PNG/HugeVision-SCM操作手册-00.基本操作篇/index.md)|
+00.基本操作篇|HugeVision-SCM的各功能的共通操作方法|[00.基本操作篇](manuals/PNG/HugeVision-SCM操作手册-00.基本操作篇/index.md)<br>[首页操作说明](manuals/MainPage.png)<br>[工具栏操作说明](manuals/ToolBar.png)|
 10.初期配置篇|在HugeVision-SCM进行初期配置，为正式运用系统做准备的方法|非一般公开文档<br>请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料|
 20.主数据篇|在HugeVision-SCM维护常用主数据(如业务伙伴、产品、价格等)的方法|非一般公开文档<br>请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料|
 30.采购篇|在HugeVision-SCM维护采购订单、执行收货、开票结算和付款的方法|非一般公开文档<br>请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料|
