@@ -22,12 +22,11 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 
 接口需使用HTTPS协议、JSON数据格式、UTF8编码
 
-
 ![](images/API_CallStep.png)<br>
 
 **Step1 协同平台注册**<br>
 在HugeVision-SCM中注册协同平台，获得系统名、系统密码<br>
-在HugeVision-SCM中注册协同平台用户，获得实体、组织、角色<br>
+在HugeVision-SCM中注册协同平台用户，获得平台用户名、实体、组织、角色<br>
 
 **Step2 验证身份并获取Token**<br>
 使用Step1中注册的系统名、用户名、系统密码进行登录认证，取得事先配置的实体、组织、角色以获取令牌<br>
@@ -41,8 +40,7 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 
 **Step4 调用具体的业务API**<br>
 使用缓存的Token调用具体业务API，具体请参考[API接口列表](#API接口列表])<br>
-※Token的有效时长为60分钟，当Token失效或过期时，需要重新获取
-<br>
+※Token的有效时长为60分钟，当Token失效或过期时，需要重新获取<br>
 
 ---
 <span id="API功能说明"></span>
@@ -54,9 +52,9 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 ---
 API的功能类型有——<br>
 1、查询业务数据<br>
-查询业务数据，可以同时更新接口字段的状态
+查询业务数据，可以同时更新查询数据的导出状态<br>
 2、创建业务数据<br>
-创建业务单据，同时执行单据操作-完成处理<br>
+创建业务单据，同时执行单据操作-完成处理(按需)<br>
 3、查询异步处理结果<br>
 查询创建业务数据的处理结果，一般用于异步处理<br>
 
@@ -101,6 +99,6 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |:--|:---|:--|:----|:--|
 |-|认证并获取Token|同步|认证并获取Token|[TOKEN获取](tokens/Tokens.md)
 |API09APDF|查询业务数据|同步|查询待处理发货单信息|[API09APDF](processes/API09APDF.md)
-|API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API09APDF.md)
+|API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API170COF.md)
 |API170COB|创建业务数据|异步|创建库存调整单|[API170COB](processes/API170COB.md)
 |API170NNF|查询异步处理结果|同步|查询库存调整单的异步处理结果|[API170NNF](processes/API170NNF.md)
