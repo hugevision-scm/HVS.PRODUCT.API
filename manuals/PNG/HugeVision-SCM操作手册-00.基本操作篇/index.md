@@ -54,9 +54,9 @@
 
 <span id="5"></span>
 
-![](幻灯片23.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
-![](幻灯片24.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
-![](幻灯片25.PNG)<br>		[<p align="right">返回目录</p>](#目录)<br>
+![](幻灯片23.PNG)<br>		[返回目录](#目录)<br>
+![](幻灯片24.PNG)<br>		[返回目录](#目录)<br>
+![](幻灯片25.PNG)<br>		[返回目录](#目录)<br>
 
 <span id="6"></span>
 
