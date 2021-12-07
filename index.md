@@ -33,7 +33,7 @@
 
 |名称|概述|文档链接|
 |:--|:---|:--|
-00.实施说明篇|HugeVision-SCM实施导入的方法、流程和管理工具|[10.业务规则篇](manuals/PNG/HugeVision-SCM实施手册-10.业务规则篇/index.md)|
+00.实施说明篇|HugeVision-SCM实施导入的方法、流程和管理工具|[10.业务规则篇](manuals/PNG/HugeVision-SCM实施手册-00.实施说明篇/index.md)|
 10.业务规则篇|HugeVision-SCM提供的系统功能体系所基于的业务规则|非一般公开文档<br>请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料|
 20.业务流程篇|HugeVision-SCM各功能模块的系统流程|[20.业务流程篇](manuals/PNG/HugeVision-SCM实施手册-20.业务流程篇/index.md)|
 50.系统设计篇|HugeVision-SCM的功能设计和非功能设计方案|[50.系统设计篇](manuals/PNG/HugeVision-SCM实施手册-50.系统设计篇/index.md)|
