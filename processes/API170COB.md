@@ -39,7 +39,7 @@
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Text|string|255|✓|产品的编码/名称/编码_名称|
-|&nbsp; &nbsp; &nbsp; &nbsp; descriptionLine|string|255||单据行的附注|
+|&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
 |&nbsp; &nbsp; &nbsp; &nbsp; lot|string|40||批号。保质期管理产品时必填。|
 |&nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10||生产日期。保质期管理产品时必填。格式为yyyy-MM-dd。|
 |&nbsp; &nbsp; &nbsp; &nbsp; invStatus_Text|string|60|✓|库存状态的名称<br>&nbsp; 正常<br>&nbsp; 冻结<br>&nbsp; 破损<br>&nbsp; 待定|
@@ -64,7 +64,7 @@ JSON格式样例
                     "lineId": "1",
                     "locator_Text": "0001_D01仓库A正品库位",
                     "product_Text": "SD01B02_D01食品酒饮02",
-                    "descriptionLine": "L01明细附注",
+                    "lineDescription": "L01明细附注",
                     "lot": "L202111",
                     "dateProduction": "2021-11-01",
                     "invStatus_Text": "正常",
@@ -74,7 +74,7 @@ JSON格式样例
                     "lineId": "2",
                     "locator_Text": "0001_D01仓库A正品库位",
                     "product_Text": "BD01A01_D01零部件001",
-                    "descriptionLine": "L02明细附注",
+                    "lineDescription": "L02明细附注",
                     "invStatus_Text": "正常",
                     "adjustQuantity": "200"
                 }
