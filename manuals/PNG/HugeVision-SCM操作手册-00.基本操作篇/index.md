@@ -1,6 +1,6 @@
 # HugeVision-SCM操作手册-00.基本操作篇
 
-##### [文档首页](../../../index.md)>[操作手册向导页](../../../manuals.md)>HugeVision-SCM操作手册-00.基本操作篇
+##### [文档首页](../../../index.md)>HugeVision-SCM操作手册-00.基本操作篇
 ---
 
 <span id="目录"></span>
