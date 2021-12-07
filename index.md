@@ -48,5 +48,5 @@ API开发向导|API调用说明、功能说明及所有API功能列表|[API开�
 
 |名称|概述|文档链接|
 |:--|:---|:--|
-00.运维说明篇|HugeVision-SCM运维方法的整体说明，包括运维体制、运维流程、运维工具|[00.运维说明篇](manuals/PNG/HugeVision-SCM运维手册-00.运维说明篇/index.md)|
+00.运维说明篇|HugeVision-SCM运维方法的整体说明<br>包括运维体制、运维流程、运维工具|[00.运维说明篇](manuals/PNG/HugeVision-SCM运维手册-00.运维说明篇/index.md)|
 
