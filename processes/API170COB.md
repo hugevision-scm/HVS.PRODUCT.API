@@ -1,6 +1,9 @@
 # API170COB
 ---
 
+[文档首页](index.md)>[HugeVision-SCM API开发手册向导页](../api.md)
+
+
 ## API概述
 
 创建 **库存调整单** 并单据操作提交。
