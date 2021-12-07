@@ -15,11 +15,11 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 [API功能说明](#API功能说明)<br>
 [API接口列表](#API接口列表)<br>
 
----
+
 <span id="API调用说明"></span>
 
 ## **API调用说明**
----
+
 接口需使用HTTPS协议、JSON数据格式、UTF8编码
 
 
@@ -48,7 +48,7 @@ HugeVision-SCM API是赋能连接与协同的开放接口<br>
 <span id="API功能说明"></span>
 
 ## **API功能说明**
----
+
 
 **功能类型**<br>
 ---
