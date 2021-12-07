@@ -1,6 +1,6 @@
 # HugeVision-SCM实施手册-00.实施说明篇
 
-##### [Manual导航页](../正式版入口.md)>HugeVision-SCM实施手册-00.实施说明篇
+##### [Manual导航页](../../正式版入口.md)>HugeVision-SCM实施手册-00.实施说明篇
 ---
 
 <span id="目录"></span>
