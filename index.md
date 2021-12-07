@@ -4,7 +4,10 @@
 ### **HugeVision-SCM API 开发手册**
 ✓HugeVision-SCM API是赋能连接与协同的开放接口<br>
 ✓服务使用方的其他系统(后称"外部系统")可以使用API接口与HugeVision-SCM平台进行数据交互和业务协同<br>
-✓点击跳转到[开发手册向导页](api.md)<br>
+
+|名称|概述|文档链接|
+|:--|:---|:--|
+API开发向导|API调用说明、功能说明及所有API功能列表|[API开发向导](api.md)
 
 ### **HugeVision-SCM 操作手册**
 
