@@ -64,5 +64,5 @@
 ![](幻灯片35.PNG)<br>	[返回目录](#目录)<br>
 ![](幻灯片36.PNG)<br>	[返回目录](#目录)<br>
 
-**L3流程非一般公开文档<br>**
-**请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料**
+Page37~69: **Level3流程<br>**
+非一般公开文档，请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料**
