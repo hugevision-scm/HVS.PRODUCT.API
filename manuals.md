@@ -1,8 +1,12 @@
 
-# HugeVision-SCM 操作手册
+# HugeVision-SCM Documentation
 
-### **操作手册一览**
+### **HugeVision-SCM API 开发手册**
+HugeVision-SCM API是赋能连接与协同的开放接口<br>
+服务使用方的其他系统(后称"外部系统")可以使用API接口与HugeVision-SCM平台进行数据交互和业务协同<br>
+点击跳转到[开发手册向导页](api.md)<br>
 
+### **HugeVision-SCM 操作手册**
 |名称|概述|文档链接
 |:--|:---|:--|
 00.基本操作篇|描述HugeVision-SCM的各功能的共通操作方法|[00.基本操作篇](manuals/PNG/HugeVision-SCM操作手册-00.基本操作篇/index.md)
@@ -15,3 +19,13 @@
 100.代理商篇|描述在HugeVision-SCM进行代理商单据协同管理的方法<br>(代理商的订购申请、采购、收货、结算，代理商的库存管理，代理商SellOut管理)|[100.代理商篇](manuals/PNG/HugeVision-SCM操作手册-100.代理商篇/index.md)
 200.供应商篇|描述在HugeVision-SCM进行供应商单据协同管理的方法<br>(供应商的询价报价、供应商的销售、发货、结算，供应商的库存管理)|[200.供应商篇](manuals/PNG/HugeVision-SCM操作手册-[200.供应商篇/index.md)
 900.API篇|描述在HugeVision-SCM维护API协同平台，管理跟踪API接口执行状态的方法|[900.API篇](manuals/PNG/HugeVision-SCM操作手册-900.API篇/index.md)
+
+### **HugeVision-SCM 实施手册**
+|名称|概述|文档链接
+|:--|:---|:--|
+
+
+### **HugeVision-SCM 运维手册**
+
+|名称|概述|文档链接
+|:--|:---|:--|
