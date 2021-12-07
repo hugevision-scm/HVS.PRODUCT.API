@@ -113,15 +113,15 @@ JSON格式样例(无条件)
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Value|string|40|✓|产品的编码|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Name|string|255|✓|产品的名称|
 |&nbsp; &nbsp; &nbsp; &nbsp; upc|string|30||产品的UPC/EAN|
-|&nbsp; &nbsp; &nbsp; &nbsp; description_Line|string|255||发货单行的附注|
+|&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||发货单行的附注|
 |&nbsp; &nbsp; &nbsp; &nbsp; movementQty|bigdecimal|16,6|✓|发货数量|
 |&nbsp; &nbsp; &nbsp; &nbsp; uom_Name|string|60|✓|计量单位的名称|
-|&nbsp; &nbsp; &nbsp; &nbsp; maList|list||✓|产品属性的列表|
+|&nbsp; &nbsp; &nbsp; &nbsp; attrList|list||✓|产品属性的列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lot|string|40||批号。保质期管理产品时有值。|
 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10||生产日期。保质期管理产品时有值。格式为yyyy-MM-dd|
 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; invStatus_Text|string|60|✓|库存状态的名称<br>&nbsp; 正常<br>&nbsp; 冻结<br>&nbsp; 破损<br>&nbsp; 待定|
-|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; movementQty_MA|bigdecimal|16,6|✓|产品属性级别的发货数量|
-|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description_MA|string|255||产品属性的附注|
+|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; attrMovementQty|bigdecimal|16,6|✓|产品属性级别的发货数量|
+|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; attrDescription|string|255||产品属性的附注|
 |requestId|string|36|✓|Request的ID|
 |requestResult|string|1|✓|请求结果<br>&nbsp; 1:成功|
 |responseTime|timestamp|19|✓|响应时间。格式为yyyy-MM-dd hh24:mi:ss。|
@@ -163,16 +163,16 @@ JSON格式样例
                     "product_Value": "SD01B09",
                     "product_Name": "D01食品酒饮09X",
                     "upc": "4940010100009",
-                    "description_Line": "",
+                    "lineDescription": "",
                     "movementQty": "1",
                     "uom_Name": "个",
-                    "maList": [
+                    "attrList": [
                         {
                             "lot": "20210323",
                             "dateProduction": "2021-01-06",
                             "invStatus_Text": "正常",
-                            "movementQty_MA": "1.0",
-                            "description_MA": ""
+                            "attrMovementQty": "1.0",
+                            "attrDescription": ""
                         }
                     ]
                 }
