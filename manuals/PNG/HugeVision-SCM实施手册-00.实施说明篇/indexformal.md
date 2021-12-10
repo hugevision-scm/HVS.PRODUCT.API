@@ -20,19 +20,19 @@
 
 <span id="1"></span>
 
-[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
+[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
 
-![](幻灯片2.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片3.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片4.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片5.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片6.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
+![](幻灯片2.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片3.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片4.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片5.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片6.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
 ![](幻灯片7.PNG)<br>		
 
 <span id="2"></span>
 
-[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片8.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
-![](幻灯片9.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../../index.md)<br>
+[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片8.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
+![](幻灯片9.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[Manual导航页↶](../../正式版入口.md)<br>
 ![](幻灯片10.PNG)<br>		
 
