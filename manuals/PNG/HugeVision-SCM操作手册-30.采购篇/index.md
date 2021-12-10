@@ -1,8 +1,8 @@
-# HugeVision-SCM操作手册-10.初期配置篇
+# HugeVision-SCM操作手册-30.采购篇
 
 <span id="目录"></span>
 
-##### [文档首页](../../../index.md)>HugeVision-SCM操作手册-10.初期配置篇
+##### [文档首页](../../../index.md)>HugeVision-SCM操作手册-30.采购篇
 ---
 
 ## 目录
