@@ -19,7 +19,7 @@
 
 <span id="1"></span>
 
-[[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
+[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 
 ![](幻灯片2.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 ![](幻灯片3.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
@@ -33,15 +33,12 @@
 
 <span id="2"></span>
 
-[[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
+[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 ![](幻灯片11.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 ![](幻灯片12.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 
-Page13:**Online处理方式和Batch处理方式**<br>
-非一般公开文档，请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料<br>
-<br>
-Page14:**认证控制方式**<br>
-非一般公开文档，请[联系我们](https://www.ivision-china.cn/contact-rgt.html)获取最新版资料<br>
+![](幻灯片13.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
+![](幻灯片14.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 
 ![](幻灯片15.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
 ![](幻灯片16.PNG)<br>		[本篇目录⇑](#目录)&nbsp;&nbsp;[文档首页↶](../../../index.md)<br>
