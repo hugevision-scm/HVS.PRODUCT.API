@@ -1,7 +1,7 @@
 
 # HugeVision-SCM API
 
-[Manual导航页](/manuals/正式版入口.md)>HugeVision-SCM API开发手册向导页
+[文档首页](/manuals/正式版入口.md)>HugeVision-SCM API开发手册向导页
 
 ---
 HugeVision-SCM API是赋能连接与协同的开放接口<br>
