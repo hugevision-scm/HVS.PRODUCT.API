@@ -16,7 +16,7 @@
 
 ##  Request
 
- ```POST```  https://*{ HVS的URL }*/api/v1/processes/**importpurchasereturn_co_f**
+ ```POST```  https://*{ HVS的URL }*/api/v1/processes/**importsalesreturn_co_f**
   
 ###  Request Header
 
