@@ -50,7 +50,7 @@
 |&nbsp; &nbsp; address2|string|60||地址2。|
 |&nbsp; &nbsp; contact_Name|string|60|条件|联系人的名称。一次性交易时必填。|
 |&nbsp; &nbsp; phone|string|60|条件|电话。一次性交易时必填。|
-|&nbsp; &nbsp; priceList_Text|string|60||价格表的名称。不填写时取得业务伙伴的价格表。|
+|&nbsp; &nbsp; priceList_Text|string|60||价格表的名称。不填写时取得使用条件的价格表。|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60||库位的编码/名称/编码_名称。不填写时取得仓库的默认库位。|
