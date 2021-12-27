@@ -150,3 +150,7 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |API250DLF|查询业务数据|同步|查询产品信息|[API250DLF](processes/API250DLF.md)
 |API260DLF|查询业务数据|同步|查询盘点单信息|[API260DLF](processes/API260DLF.md)
 |API260ULF|创建业务数据|同步|更新盘点单信息|[API260ULF](processes/API260ULF.md)
+|API270COF|创建业务数据|同步|创建询价单|[API270COF](processes/API270COF.md)
+|API270COB|创建业务数据|异步|创建询价单|[API270COB](processes/API270COB.md)
+|API270NNF|查询异步处理结果|同步|查询询价单的异步处理结果|[API270NNF](processes/API270NNF.md)
+|API280ULF|创建业务数据|同步|更新询价单响应信息|[API280ULF](processes/API280ULF.md)
