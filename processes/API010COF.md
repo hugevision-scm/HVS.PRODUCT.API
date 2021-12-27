@@ -32,7 +32,7 @@
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
-|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。未填写时取得登录用户组织。|
+|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
 |&nbsp; &nbsp; doctype_Name|string|60|✓|单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 采购订单<br>&nbsp; 采购订单-进口|
 |&nbsp; &nbsp; dateOrdered|date|10||订单日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
 |&nbsp; &nbsp; dateDeliveryTo|date|10||希望交付日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
@@ -78,7 +78,7 @@ JSON格式样例
 |&nbsp; &nbsp; docResult|string|1|✓|单据处理结果<br>&nbsp; 1:成功<br>&nbsp; 9:失败|
 |&nbsp; &nbsp; docErrorMsg|string|2000||单据级别的报错消息。单据处理结果为**失败**时设定。|
 |&nbsp; &nbsp; docNoHVS|string|20||HVS的单据号。单据处理结果为**成功**时设定。|
-|&nbsp; &nbsp; docStatus|string|2||单据状态。单据处理结果为**成功**时设定。<br>&nbsp; DR:草稿<br>&nbsp; AP:待批<br>&nbsp; IP:开放<br>&nbsp; CO:完成|
+|&nbsp; &nbsp; docStatus|string|2||单据状态。单据处理结果为**成功**时设定。<br>&nbsp; AP:待批<br>&nbsp; CO:完成|
 |&nbsp; &nbsp; taxExcludedAmtTotal|bigdecimal|16,2||HVS的不含税总额(原币)|
 |&nbsp; &nbsp; taxAmtTotal|bigdecimal|16,2||HVS的税总额(原币)|
 |&nbsp; &nbsp; taxIncludedAmtTotal|bigdecimal|16,2||HVS的含税总额(原币)|
