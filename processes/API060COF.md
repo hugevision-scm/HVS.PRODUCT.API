@@ -32,7 +32,7 @@
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
-|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。未填写时取得登录用户组织。|
+|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
 |&nbsp; &nbsp; doctype_Name|string|60||单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 实物领用|
 |&nbsp; &nbsp; dateOrdered|date|10||订单日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
 |&nbsp; &nbsp; dateDeliveryTo|date|10||希望交付日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
@@ -50,7 +50,6 @@
 |&nbsp; &nbsp; address2|string|60||地址2。|
 |&nbsp; &nbsp; contact_Name|string|60|条件|联系人的名称。一次性交易时必填。|
 |&nbsp; &nbsp; phone|string|60|条件|电话。一次性交易时必填。|
-|&nbsp; &nbsp; charge_Name|string|20|✓|费用的名称|
 |&nbsp; &nbsp; priceList_Text|string|60||价格表的名称。不填写时取得业务伙伴的价格表。|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
