@@ -32,11 +32,11 @@
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
-|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。未填写时取得登录用户组织。|
+|&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
 |&nbsp; &nbsp; doctype_Name|string|60||单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 销售退货|
 |&nbsp; &nbsp; dateOrdered|date|10||订单日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
 |&nbsp; &nbsp; dateReturn|date|10||可退货日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
-|&nbsp; &nbsp; returnType_Text|string|60||退货类型的名称。<br>可填写如下退货类型<br>&nbsp; 仅退款<br>&nbsp; 退货退款|
+|&nbsp; &nbsp; returnType_Text|string|60|✓|退货类型的名称。<br>可填写如下退货类型<br>&nbsp; 仅退款<br>&nbsp; 退货退款|
 |&nbsp; &nbsp; description|string|255||单据的附注|
 |&nbsp; &nbsp; bpartner_Value|string|40|条件|业务伙伴的编码。编码或名称为必填。|
 |&nbsp; &nbsp; bpartner_Name|string|60|条件|业务伙伴的名称。编码或名称为必填。|
@@ -54,21 +54,18 @@
 |&nbsp; &nbsp; address2|string|60||地址2。|
 |&nbsp; &nbsp; contact_Name|string|60|条件|联系人的名称。一次性交易时必填。|
 |&nbsp; &nbsp; phone|string|60|条件|电话。一次性交易时必填。|
-|&nbsp; &nbsp; priceList_Text|string|60||价格表的名称。不填写时取得业务伙伴的采购价格表。|
+|&nbsp; &nbsp; priceList_Text|string|60||价格表的名称。不填写时取得业务伙伴的价格表。|
 |&nbsp; &nbsp; settlementRate|bigdecimal|16,10||结算汇率。不填写时取得订单日期当天的汇率。|
 |&nbsp; &nbsp; isFixedRate|string|1||固定汇率。格式为Y/N。不填写时为N。|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
-|&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称|
+|&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60||库位的编码/名称/编码_名称。不填写时取得仓库的默认库位。|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Value|string|40|条件|产品的编码。编码或名称为必填。|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Name|string|60|条件|产品的名称。编码或名称为必填。|
-|&nbsp; &nbsp; &nbsp; &nbsp; lot|string|40|条件|批号。批号管理产品时必填。|
-|&nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10|条件|生产日期。保质期管理产品时必填。格式为yyyy-MM-dd。|
-|&nbsp; &nbsp; &nbsp; &nbsp; invStatus_Name|string|60|条件|库存状态的名称。库存状态管理产品时必填。<br>可填写如下库存状态。<br>&nbsp; 正常<br>&nbsp; 冻结<br>&nbsp; 破损<br>&nbsp; 待定|
 |&nbsp; &nbsp; &nbsp; &nbsp; qty|bigdecimal|16,6|✓|数量。必须小于0。|
 |&nbsp; &nbsp; &nbsp; &nbsp; uom_Name|string|60||单位的名称。不填写时取得产品的单位。|
 |&nbsp; &nbsp; &nbsp; &nbsp; price|bigdecimal|16,6||单价。必须大于0。不填写时取得价格表维护的价格。|
-|&nbsp; &nbsp; &nbsp; &nbsp; tax_Text|string|60||税率的名称/附注。不填写时取得产品的税率(采购)。|
+|&nbsp; &nbsp; &nbsp; &nbsp; tax_Text|string|60||税率的名称/附注。不填写时取得产品的税率。|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
 
 JSON格式样例
