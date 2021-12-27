@@ -145,3 +145,6 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |API240DLF|查询业务数据|同步|查询业务伙伴(客户)信息|[API240DLF](processes/API240DLF.md)
 |API241DLF|查询业务数据|同步|查询业务伙伴(供应商)信息|[API241DLF](processes/API241DLF.md)
 |API242DLF|查询业务数据|同步|查询业务伙伴(其他)信息|[API242DLF](processes/API242DLF.md)
+|API250DLF|查询业务数据|同步|查询产品信息|[API250DLF](processes/API250DLF.md)
+|API260DLF|查询业务数据|同步|查询盘点单信息|[API260DLF](processes/API260DLF.md)
+|API260ULF|创建业务数据|同步|更新盘点单信息|[API260ULF](processes/API260ULF.md)
