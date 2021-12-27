@@ -47,7 +47,7 @@ JSON格式样例
 
 ###  Response Body
 
-* 处理成功时返回如下JSON数据（与API170COF的Response一样格式）
+* 处理成功时返回如下JSON数据（与API050COF的Response一样格式）
 
 |名称|类型|长度|必填项|附注|
 |:--|:--|:--|:--|:--|
@@ -56,7 +56,7 @@ JSON格式样例
 |&nbsp; &nbsp; docResult|string|1|✓|单据处理结果<br>&nbsp; 1:成功<br>&nbsp; 9:失败|
 |&nbsp; &nbsp; docErrorMsg|string|2000||单据级别的报错消息。单据处理结果为**失败**时设定。|
 |&nbsp; &nbsp; docNoHVS|string|20||HVS的单据号。单据处理结果为**成功**时设定。|
-|&nbsp; &nbsp; docStatus|string|2||单据状态。单据处理结果为**成功**时设定。<br>&nbsp; DR:草稿<br>&nbsp; AP:待批<br>&nbsp; IP:开放<br>&nbsp; CO:完成|
+|&nbsp; &nbsp; docStatus|string|2||单据状态。单据处理结果为**成功**时设定。<br>&nbsp; AP:待批<br>&nbsp; CO:完成|
 |&nbsp; &nbsp; taxExcludedAmtTotal|bigdecimal|16,2||HVS的不含税总额(原币)|
 |&nbsp; &nbsp; taxAmtTotal|bigdecimal|16,2||HVS的税总额(原币)|
 |&nbsp; &nbsp; taxIncludedAmtTotal|bigdecimal|16,2||HVS的含税总额(原币)|
