@@ -32,10 +32,10 @@
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
-|&nbsp; &nbsp; org_Text|string|60|✓|组织的编码/名称/编码_名称|
-|&nbsp; &nbsp; doctype_Name|string|60|✓|固定为库存调整|
-|&nbsp; &nbsp; movementDate|date|10|✓|调整日期。格式为yyyy-MM-dd。|
-|&nbsp; &nbsp; dateAcct|date|10||记账日期。格式为yyyy-MM-dd。|
+|&nbsp; &nbsp; org_Text|string|60|✓|组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
+|&nbsp; &nbsp; doctype_Name|string|60|-|<br>可填写如下单据类型<br>&nbsp; 库存调整<br>&nbsp; 库存调整(代理商)<br>&nbsp; 库存调整(供应商)。<br>不填写时根据组织取得。|
+|&nbsp; &nbsp; movementDate|date|10|-|调整日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
+|&nbsp; &nbsp; dateAcct|date|10||记账日期。格式为yyyy-MM-dd。不填写时取得调整日期。|
 |&nbsp; &nbsp; warehouse_Text|string|60|✓|仓库的编码/名称/编码_名称|
 |&nbsp; &nbsp; description|string|255||单据的附注|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
