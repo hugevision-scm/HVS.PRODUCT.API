@@ -154,3 +154,7 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |API270COB|创建业务数据|异步|创建询价单|[API270COB](processes/API270COB.md)
 |API270NNF|查询异步处理结果|同步|查询询价单的异步处理结果|[API270NNF](processes/API270NNF.md)
 |API280ULF|创建业务数据|同步|更新询价单响应信息|[API280ULF](processes/API280ULF.md)
+|API290COF|单据操作|同步|单据操作完成|[API290COF](processes/API290COF.md)
+|API290VOF|单据操作|同步|单据操作作废|[API290VOF](processes/API290VOF.md)
+|API290CLF|单据操作|同步|单据操作关闭|[API290CLF](processes/API290CLF.md)
+|API290RCF|单据操作|同步|单据操作冲销|[API290RCF](processes/API290RCF.md)
