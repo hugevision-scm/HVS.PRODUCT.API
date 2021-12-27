@@ -141,3 +141,7 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |API220COF|创建业务数据|同步|创建请购单|[API220COF](processes/API220COF.md)
 |API220COB|创建业务数据|异步|创建请购单|[API220COB](processes/API220COB.md)
 |API220NNF|查询异步处理结果|同步|查询请购单的异步处理结果|[API220NNF](processes/API220NNF.md)
+|API230DLF|查询业务数据|同步|查询库存明细信息|[API230DLF](processes/API230DLF.md)
+|API240DLF|查询业务数据|同步|查询业务伙伴(客户)信息|[API240DLF](processes/API240DLF.md)
+|API241DLF|查询业务数据|同步|查询业务伙伴(供应商)信息|[API241DLF](processes/API241DLF.md)
+|API242DLF|查询业务数据|同步|查询业务伙伴(其他)信息|[API242DLF](processes/API242DLF.md)
