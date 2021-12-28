@@ -1,6 +1,6 @@
-# API09ADPF
+# API09APDF
 
-##### [文档首页](../index.md)>[HugeVision-SCM API开发手册向导页](../api.md)>API09ADPF
+##### [文档首页](../index.md)>[HugeVision-SCM API开发手册向导页](../api.md)>API09APDF
 
 ---
 
