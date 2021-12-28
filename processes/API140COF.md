@@ -60,7 +60,7 @@
 |&nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10|条件|生产日期。保质期管理产品时必填。格式为yyyy-MM-dd。|
 |&nbsp; &nbsp; &nbsp; &nbsp; invStatus_Name|string|60|条件|库存状态的名称。库存状态管理产品时必填。<br>可填写如下库存状态。<br>&nbsp; 正常<br>&nbsp; 冻结<br>&nbsp; 破损<br>&nbsp; 待定|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
-|&nbsp; &nbsp; &nbsp; &nbsp; qty|bigdecimal|16,6|✓|数量。必须大于0。|
+|&nbsp; &nbsp; &nbsp; &nbsp; movementQty|bigdecimal|16,6|✓|移动数量。必须大于0。|
 
 JSON格式样例
 ```
