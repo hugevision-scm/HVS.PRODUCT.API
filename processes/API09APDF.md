@@ -46,30 +46,30 @@
 JSON格式样例(有条件)
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
-    "requestTime": "2021-11-24 12:00:00",
+    "requestId": "API09APD-0000-0000-0000-000000000001",
+    "requestTime": "2021-11-30 12:00:00",
     "org_Value" : "D01",
     "org_Name" : "HugeVision-SCM Demo",
     "doctype_Name" : "发货单-信用",
-    "documentNo" : "2110DOC8003",
+    "documentNo" : "2111DOC8001",
     "poReference" : "DOC0001",
-    "documentNo_Order" : "2110SOC8002",
+    "documentNo_Order" : "2111SOC8001",
     "poReference_Order" : "SOC0001",
     "bpartner_Value" : "CD01NB50",
     "bpartner_Name" : "D01信用客户50名称",
-    "warehouse_Value" : "00",
-    "warehouse_Name" : "D01仓库A",
-    "warehouse_ReferenceNo" : "WH1",
-    "movementDate" : "2021-11-24",
-    "movementDateTo" : "2021-11-24"
+    "warehouse_Value" : "02",
+    "warehouse_Name" : "D01B2B仓库",
+    "warehouse_ReferenceNo" : "B2B",
+    "movementDate" : "2021-11-01",
+    "movementDateTo" : "2021-11-30"
 }
 ```
 
 JSON格式样例(无条件)
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
-    "requestTime": "2021-11-24 12:00:00"
+    "requestId": "API09APD-0000-0000-0000-000000000001",
+    "requestTime": "2021-11-30 12:00:00"
 }
 ```
 
@@ -137,14 +137,14 @@ JSON格式样例
         {
             "org_Value": "D01",
             "org_Name": "HugeVision-SCM Demo",
-            "documentNo": "2110DOC8004",
-            "poReference": "",
-            "documentNo_Order": "2110SOC8002",
-            "poReference_Order": "",
+            "documentNo": "2111DOC8001",
+            "poReference": "DOC0001",
+            "documentNo_Order": "2111SOC8001",
+            "poReference_Order": "SOC0001",
             "movementDate": "2021-10-25",
-            "warehouse_Value": "00",
-            "warehouse_Name": "D01仓库A",
-            "warehouse_ReferenceNo": "",
+            "warehouse_Value": "02",
+            "warehouse_Name": "D01B2B仓库",
+            "warehouse_ReferenceNo": "B2B",
             "bpartner_Value": "CD01NB50",
             "bpartner_Name": "D01信用客户50名称",
             "bpartnerLocation_Name": "CD01NB50自提地址",
@@ -182,7 +182,7 @@ JSON格式样例
             ]
         }
     ],
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API09APD-0000-0000-0000-000000000001",
     "requestResult": "1",                                                              /*1: 成功*/
     "responseTime": "2021-11-24 14:57:43",
     "errorMsg": "处理成功"
@@ -201,7 +201,7 @@ JSON格式样例
 JSON格式样例
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API09APD-0000-0000-0000-000000000001",
     "requestResult": "1",                                                              /*1: 成功*/
     "responseTime": "2021-11-24 14:54:39",
     "errorMsg": "No Data!"
