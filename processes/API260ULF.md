@@ -29,7 +29,7 @@
 |requestId|string|36|✓|每次处理唯一的ID|
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
-|&nbsp; &nbsp; documentNo|string|20|✓|HVS收货单的单据号|
+|&nbsp; &nbsp; documentNo|string|20|✓|盘点单的单据号|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的单据行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称。|
