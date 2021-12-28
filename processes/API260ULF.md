@@ -29,7 +29,7 @@
 |requestId|string|36|✓|每次处理唯一的ID|
 |requestTime|timestamp|19|✓|请求时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |docList|list||✓|单据列表|
-|&nbsp; &nbsp; documentNo|string|20|✓|盘点单的单据号|
+|&nbsp; &nbsp; documentNo|string|20|✓|HVS盘点单的单据号|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的单据行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称。|
@@ -58,16 +58,16 @@ JSON格式样例
 |名称|类型|长度|必填项|附注|
 |:--|:--|:--|:--|:--|
 |docList|list||✓|单据列表|
-|&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
+|&nbsp; &nbsp; docNo|string|20|✓|盘点单的单据号|
 |&nbsp; &nbsp; docResult|string|1|✓|单据处理结果<br>&nbsp; 1:成功<br>&nbsp; 9:失败|
 |&nbsp; &nbsp; docErrorMsg|string|2000||单据级别的报错消息。单据处理结果为**失败**时设定。|
-|&nbsp; &nbsp; docNoHVS|string|20||HVS的单据号。单据处理结果为**成功**时设定。|
+|&nbsp; &nbsp; docNoHVS|string|20||盘点单的单据号。单据处理结果为**成功**时设定。|
 |&nbsp; &nbsp; docStatus|string|2||单据状态。单据处理结果为**成功**时设定。<br>&nbsp; DR:草稿|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20|✓|外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineResult|string|1|✓|单据行处理结果<br>&nbsp; 1:成功<br>&nbsp; 9:失败|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineErrorMsg|string|2000||单据行报错消息。单据行处理结果为**失败**时设定。|
-|&nbsp; &nbsp; &nbsp; &nbsp; lineNoHVS|string|10||HVS的单据行号。单据处理结果为**成功**时设定。|
+|&nbsp; &nbsp; &nbsp; &nbsp; lineNoHVS|string|10||HVS的盘点单行的行号。单据处理结果为**成功**时设定。|
 |requestId|string|36|✓|Request的ID|
 |requestResult|string|1|✓|请求结果<br>&nbsp; 1:成功<br>&nbsp; 9:失败(系统异常)|
 |responseTime|timestamp|19|✓|响应时间。格式为yyyy-MM-dd hh24:mi:ss。|
@@ -82,10 +82,10 @@ JSON格式样例(导入成功)
 {
     "docList": [
         {
-            "docNo": "2111SC8001",
+            "docNo": "2111SC0001",
             "docResult": "1",                                                          /*1: 成功*/
             "docErrorMsg": "",
-            "docNoHVS": "2111SC8001CI01",
+            "docNoHVS": "2111SC0001",
             "docStatus": "DR",
             "lineList": [
                 {
