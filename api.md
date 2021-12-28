@@ -135,6 +135,8 @@ API调用后，只执行API请求导入，导入成功即返回"异步处理提�
 |API150NNF|查询异步处理结果|同步|查询属性变更单的异步处理结果|[API150NNF](processes/API150NNF.md)
 |API160DLF|查询业务数据|同步|查询移库确认单信息|[API160DLF](processes/API160DLF.md)
 |API160ULF|创建业务数据|同步|更新移库确认单信息|[API160ULF](processes/API160ULF.md)
+|API16AFSF|创建业务数据|同步|导入移出结果信息|[API16AFSF](processes/API16AFSF.md)
+|API16BFSF|创建业务数据|同步|导入移入结果信息|[API16BFSF](processes/API16BFSF.md)
 |API170COF|创建业务数据|同步|创建库存调整单|[API170COF](processes/API170COF.md)
 |API170COB|创建业务数据|异步|创建库存调整单|[API170COB](processes/API170COB.md)
 |API170NNF|查询异步处理结果|同步|查询库存调整单的异步处理结果|[API170NNF](processes/API170NNF.md)
