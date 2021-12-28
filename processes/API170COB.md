@@ -41,7 +41,7 @@
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称|
-|&nbsp; &nbsp; &nbsp; &nbsp; product_Text|string|255|✓|产品的编码/名称/编码_名称|
+|&nbsp; &nbsp; &nbsp; &nbsp; product_Text|string|60|✓|产品的编码/名称/编码_名称|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
 |&nbsp; &nbsp; &nbsp; &nbsp; lot|string|40||批号。保质期管理产品时必填。|
 |&nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10||生产日期。保质期管理产品时必填。格式为yyyy-MM-dd。|
@@ -51,21 +51,21 @@
 JSON格式样例
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
-    "requestTime": "2021-11-15 12:00:00",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
+    "requestTime": "2021-11-30 12:00:00",
     "docList": [
         {
             "docNo": "INV2021110001",
             "org_Text": "HugeVision-SCM Demo",
             "doctype_Name": "库存调整",
-            "movementDate": "2021-11-15",
-            "dateAcct": "2021-11-15",
-            "warehouse_Text": "D01仓库A",
+            "movementDate": "2021-11-30",
+            "dateAcct": "2021-11-30",
+            "warehouse_Text": "D01B2C仓库",
             "description": "库存调整附注",
             "lineList": [
                 {
                     "lineId": "1",
-                    "locator_Text": "0001_D01仓库A正品库位",
+                    "locator_Text": "0001_D01B2C仓库常规库位",
                     "product_Text": "SD01B02_D01食品酒饮02",
                     "lineDescription": "L01明细附注",
                     "lot": "L202111",
@@ -75,7 +75,7 @@ JSON格式样例
                 },
                 {
                     "lineId": "2",
-                    "locator_Text": "0001_D01仓库A正品库位",
+                    "locator_Text": "0001_D01B2C仓库常规库位",
                     "product_Text": "BD01A01_D01零部件001",
                     "lineDescription": "L02明细附注",
                     "invStatus_Text": "正常",
@@ -107,9 +107,9 @@ JSON格式样例
 JSON格式样例(导入成功)
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestResult": "1",
-    "responseTime": "2021-11-24 15:38:12",
+    "responseTime": "2021-11-30 12:00:00",
     "errorMsg": "异步处理提交成功"
 }
 ```
