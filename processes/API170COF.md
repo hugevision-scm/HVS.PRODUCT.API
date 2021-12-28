@@ -41,7 +41,7 @@
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; locator_Text|string|60|✓|库位的编码/名称/编码_名称|
-|&nbsp; &nbsp; &nbsp; &nbsp; product_Text|string|255|✓|产品的编码/名称/编码_名称|
+|&nbsp; &nbsp; &nbsp; &nbsp; product_Text|string|60|✓|产品的编码/名称/编码_名称|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
 |&nbsp; &nbsp; &nbsp; &nbsp; lot|string|40||批号。保质期管理产品时必填。|
 |&nbsp; &nbsp; &nbsp; &nbsp; dateProduction|date|10||生产日期。保质期管理产品时必填。格式为yyyy-MM-dd。|
@@ -51,21 +51,21 @@
 JSON格式样例
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestTime": "2021-11-15 12:00:00",
     "docList": [
         {
             "docNo": "INV2021110001",
             "org_Text": "HugeVision-SCM Demo",
             "doctype_Name": "库存调整",
-            "movementDate": "2021-11-15",
-            "dateAcct": "2021-11-15",
-            "warehouse_Text": "D01仓库A",
+            "movementDate": "2021-11-30",
+            "dateAcct": "2021-11-30",
+            "warehouse_Text": "D01B2C仓库",
             "description": "库存调整附注",
             "lineList": [
                 {
                     "lineId": "1",
-                    "locator_Text": "0001_D01仓库A正品库位",
+                    "locator_Text": "0001_D01B2C仓库常规库位",
                     "product_Text": "SD01B02_D01食品酒饮02",
                     "lineDescription": "L01明细附注",
                     "lot": "L202111",
@@ -75,7 +75,7 @@ JSON格式样例
                 },
                 {
                     "lineId": "2",
-                    "locator_Text": "0001_D01仓库A正品库位",
+                    "locator_Text": "0001_D01B2C仓库常规库位",
                     "product_Text": "BD01A01_D01零部件001",
                     "lineDescription": "L02明细附注",
                     "invStatus_Text": "正常",
@@ -127,7 +127,7 @@ JSON格式样例(导入成功)
             "docNo": "INV2021110001",
             "docResult": "1",                                                          /*1: 成功*/
             "docErrorMsg": "",
-            "docNoHVS": "2111SA0008",
+            "docNoHVS": "2111SA0001",
             "docStatus": "AP",
             "lineList": [
                 {
@@ -145,11 +145,11 @@ JSON格式样例(导入成功)
             ]
         }
     ],
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestResult": "1",                                                              /*1: 成功*/
-    "responseTime": "2021-11-24 11:59:10",
+    "responseTime": "2021-11-30 12:00:00",
     "errorMsg": "处理成功",
-    "targetRequestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "targetRequestId": "API0170CO-0000-0000-0000-000000000001",
     "targetRequestStatus": "1",                                                        /*1: 已处理*/
     "targetRequestResult": "1",                                                        /*1: 成功*/
     "targetRequestErrorMsg ": "处理成功"
@@ -218,11 +218,11 @@ JSON格式样例(导入失败)
             ]
         }
     ],
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestResult": "1",                                                              /*1: 成功*/
-    "responseTime": "2021-11-24 14:17:49",
+    "responseTime": "2021-11-30 12:00:00",
     "errorMsg": "处理失败(请求数据数据错误导入失败)",
-    "targetRequestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "targetRequestId": "API0170CO-0000-0000-0000-000000000001",
     "targetRequestStatus": "1",                                                        /*1: 已处理*/
     "targetRequestResult": "7",                                                        /*7: 失败(数据错误)*/
     "targetRequestErrorMsg ": "处理失败(请求数据数据错误导入失败)"
@@ -243,9 +243,9 @@ JSON格式样例(单据操作失败)
 JSON格式样例
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestResult": "6",
-    "responseTime": "2021-11-24 11:57:16",
+    "responseTime": "2021-11-30 12:00:00",
     "errorMsg": "RequestId重复"
 }
 ```
@@ -266,11 +266,11 @@ JSON格式样例
 JSON格式样例
 ```
 {
-    "requestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "requestId": "API0170CO-0000-0000-0000-000000000001",
     "requestResult": "1",
-    "responseTime": "2021-11-24 14:08:05",
+    "responseTime": "2021-11-30 12:00:00",
     "errorMsg": "处理失败(请求数据格式错误解析失败) - Parse Error;Unparseable date: \"202X-11-15\"",
-    "targetRequestId": "431e38b8-b67f-4eb8-ba15-173b3495f67c",
+    "targetRequestId": "API0170CO-0000-0000-0000-000000000001",
     "targetRequestStatus": "1",
     "targetRequestResult": "6",
     "targetRequestErrorMsg ": "处理失败(请求数据格式错误解析失败) - Parse Error;Unparseable date: \"202X-11-15\""
