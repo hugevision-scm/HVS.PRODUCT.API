@@ -69,6 +69,6 @@ JSON格式样例
 
 ###  Response Body
 
-* 创建业务数据异步处理的响应格式
+创建业务数据异步处理的响应格式
 
 &nbsp;&nbsp;&nbsp;&nbsp;→&nbsp;[响应格式&样例](Response_Body_01.md)
