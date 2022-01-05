@@ -78,6 +78,4 @@ JSON格式样例
 |responseTime|timestamp|19|✓|响应时间。格式为yyyy-MM-dd hh24:mi:ss。|
 |errorMsg|string|255|✓|处理消息<br>&nbsp; 异步处理提交成功|
 
-* JSON格式样例(导入成功)
-
-&nbsp;→ [响应样例](Sample_Response_01.md)
+&nbsp;→ 处理成功时的[响应样例](Sample_Response_01.md)
