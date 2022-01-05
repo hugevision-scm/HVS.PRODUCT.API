@@ -71,13 +71,4 @@ JSON格式样例
 
 * 处理成功时返回如下JSON数据
 
-![](images/API_ResponseBody_01.png)<br>
-
-|名称|类型|长度|必填项|附注|
-|:--|:--|:--|:--|:--|
-|requestId|string|36|✓|Request的ID|
-|requestResult|string|1|✓|请求结果<br>&nbsp; 1:成功|
-|responseTime|timestamp|19|✓|响应时间。格式为yyyy-MM-dd hh24:mi:ss。|
-|errorMsg|string|255|✓|处理消息<br>&nbsp; 异步处理提交成功|
-
 &nbsp;→ 处理成功时的[响应样例](Sample_Response_01.md)
