@@ -69,7 +69,7 @@ JSON格式样例
 
 ###  Response Body
 
-&nbsp;→ [响应格式](Response_Body_01.md)
+&nbsp;→ [创建业务数据异步处理的响应格式](Response_Body_01.md)
 
 * 处理成功时返回如下JSON数据
 
