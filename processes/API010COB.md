@@ -70,8 +70,5 @@ JSON格式样例
 ###  Response Body
 
 * 创建业务数据异步处理的响应格式
-&nbsp;→ [创建业务数据异步处理的响应格式](Response_Body_01.md)
 
-* 处理成功时返回如下JSON数据
-
-&nbsp;→ 处理成功时的[响应样例](Sample_Response_01.md)
+&nbsp;→ [响应格式&样例](Response_Body_01.md)
