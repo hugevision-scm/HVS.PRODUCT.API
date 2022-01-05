@@ -70,6 +70,7 @@ JSON格式样例
 ###  Response Body
 
 * 处理成功时返回如下JSON数据
+
 ![](../images/API_ResponseBody_01.png)<br>
 
 |名称|类型|长度|必填项|附注|
