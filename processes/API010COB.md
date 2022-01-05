@@ -79,11 +79,4 @@ JSON格式样例
 |errorMsg|string|255|✓|处理消息<br>&nbsp; 异步处理提交成功|
 
 JSON格式样例(导入成功)
-```
-{
-    "requestId": "API010CO-0000-0000-0000-000000000001",
-    "requestResult": "1",
-    "responseTime": "2021-11-30 12:00:00",
-    "errorMsg": "异步处理提交成功"
-}
-```
+[响应样例](Sample_Response01.md)
