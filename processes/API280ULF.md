@@ -31,7 +31,7 @@
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|HVS询价单的单据号|
 |&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
-|&nbsp; &nbsp; doctype_Name|string|60||单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 询价单响应|
+|&nbsp; &nbsp; doctype_Name|string|60||单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 询价响应|
 |&nbsp; &nbsp; reponseIsActive|string|1||询价单响应的有效。格式为Y/N。不填写时不更新。|
 |&nbsp; &nbsp; bpartner_Value|string|40|条件|业务伙伴的编码。编码或名称为必填。|
 |&nbsp; &nbsp; bpartner_Name|string|60|条件|业务伙伴的名称。编码或名称为必填。|
