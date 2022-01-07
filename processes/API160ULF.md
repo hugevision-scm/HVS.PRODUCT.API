@@ -35,7 +35,7 @@
 |&nbsp; &nbsp; description|string|255||附注(移出)|
 |&nbsp; &nbsp; descriptionTo|string|255||附注(移入)|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
-|&nbsp; &nbsp; &nbsp; &nbsp; line|string|20||移库单行的行号|
+|&nbsp; &nbsp; &nbsp; &nbsp; line|string|20|✓|移库单行的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; confirmedQty|bigdecimal|16,6|✓|移出确认数量。必须大于等于0。|
 |&nbsp; &nbsp; &nbsp; &nbsp; qtyReceipt|bigdecimal|16,6|✓|移入确认数量。必须大于等于0。|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||行的附注(移出)|
