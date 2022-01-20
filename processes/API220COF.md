@@ -33,7 +33,6 @@
 |docList|list||✓|单据列表|
 |&nbsp; &nbsp; docNo|string|20|✓|外部系统的单据号|
 |&nbsp; &nbsp; org_Text|string|60||组织的编码/名称/编码_名称。不填写时取得登录用户组织。|
-|&nbsp; &nbsp; doctype_Name|string|60||单据类型的名称。<br>可填写如下单据类型<br>&nbsp; 请购单|
 |&nbsp; &nbsp; dateDoc|date|10||单据日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
 |&nbsp; &nbsp; description|string|255||单据的附注|
 |&nbsp; &nbsp; warehouse_Text|string|60||仓库的编码/名称。不填写时取得组织默认仓库。|
@@ -41,8 +40,8 @@
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Value|string|40|条件|产品的编码。编码或名称为必填。|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Name|string|60|条件|产品的名称。编码或名称为必填。|
-|&nbsp; &nbsp; &nbsp; &nbsp; qty|bigdecimal|16,6|✓|数量。必须大于0。|
-|&nbsp; &nbsp; &nbsp; &nbsp; price|bigdecimal|16,6||单价。必须大于等于0。不填写时取得价格表维护的价格。|
+|&nbsp; &nbsp; &nbsp; &nbsp; qty|bigdecimal|16,6|✓|请购数量。必须大于0。|
+|&nbsp; &nbsp; &nbsp; &nbsp; price|bigdecimal|16,6||请购单价(不含税)。必须大于等于0。|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineDescription|string|255||单据行的附注|
 
 JSON格式样例
