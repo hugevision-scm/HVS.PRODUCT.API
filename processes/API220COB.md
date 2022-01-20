@@ -37,7 +37,6 @@
 |&nbsp; &nbsp; dateDoc|date|10||单据日期。格式为yyyy-MM-dd。不填写时取得当前日期。|
 |&nbsp; &nbsp; description|string|255||单据的附注|
 |&nbsp; &nbsp; warehouse_Text|string|60||仓库的编码/名称。不填写时取得组织默认仓库。|
-|&nbsp; &nbsp; priceList_Text|string|60|✓|价格表的名称。|
 |&nbsp; &nbsp; lineList|list||✓|单据行列表|
 |&nbsp; &nbsp; &nbsp; &nbsp; lineId|string|20||外部系统的行号|
 |&nbsp; &nbsp; &nbsp; &nbsp; product_Value|string|40|条件|产品的编码。编码或名称为必填。|
