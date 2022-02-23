@@ -42,9 +42,9 @@
 |product_Name|string|60||查询对象产品的名称|
 |lot|string|40||查询对象批号|
 |dateProduction|date|10||查询对象生产日期From|
-|dateProductionTo|date|10||查询对象生产日期To|
+|dateProduction_to|date|10||查询对象生产日期To|
 |guaranteeDate|date|10||查询对象保质期From|
-|guaranteeDateTo|date|10||查询对象保质期To|
+|guaranteeDate_to|date|10||查询对象保质期To|
 |validityStatus_Name|string|60||查询对象效期状态的名称。<br>可填写的效期状态如下。<br>&nbsp; 良好<br>&nbsp; 1/3效期<br>&nbsp; 1/2效期<br>&nbsp; 2/3效期<br>&nbsp; 过期|
 |invStatus_Name|string|60||查询对象库存状态的名称。<br>可填写的库存状态如下。<br>&nbsp; 正常<br>&nbsp; 冻结<br>&nbsp; 破损<br>&nbsp; 待定|
 
@@ -67,9 +67,9 @@ JSON格式样例
     "product_Name": "D01食品酒饮01",
     "lot": "202101",
     "dateProduction": "2021-01-01",
-    "dateProductionTo": "2021-12-31",
+    "dateProduction_to": "2021-12-31",
     "guaranteeDate": "2021-01-01",
-    "guaranteeDateTo": "2021-12-31",
+    "guaranteeDate_to": "2021-12-31",
     "validityStatus_Name": "良好",
     "invStatus_Name": "正常"
 }
