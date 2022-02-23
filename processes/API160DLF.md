@@ -39,7 +39,7 @@
 |warehouseTo_Name|string|60||检索条件。移入仓库的名称。|
 |warehouseTo_ReferenceNo|string|40||检索条件。移入仓库的参考号。|
 |movementDate|date|10||检索条件。移库日期From。格式为yyyy-MM-dd。|
-|movementDateTo|date|10||检索条件。移库日期To。格式为yyyy-MM-dd。|
+|movementDate_to|date|10||检索条件。移库日期To。格式为yyyy-MM-dd。|
 
 JSON格式样例
 ```
@@ -57,7 +57,7 @@ JSON格式样例
     "warehouseTo_Name" : "D01B2B仓库",
     "warehouseTo_ReferenceNo" : "B2B",
     "movementDate" : "2021-11-01",
-    "movementDateTo" : "2021-11-30"
+    "movementDate_to" : "2021-11-30"
 }
 ```
 
